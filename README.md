@@ -156,3 +156,22 @@ uvicorn python.deploy_api:app --host 0.0.0.0 --port 8000
 
 ## Suitable for final-year students
 - Modular folders, commented scripts, clear execution path, and measurable outcomes.
+
+
+## 14) Deploy the whole project
+
+This repository now includes deployment assets for end-to-end reproducibility:
+- `Dockerfile`
+- `docker-compose.yml`
+- `deploy/deploy_local.sh`
+- `deploy/render.yaml`
+- `deploy/DEPLOYMENT.md`
+
+### One-command local deployment
+```bash
+./deploy/deploy_local.sh
+```
+
+### Deployment link
+- Local deployment link: **http://127.0.0.1:8000/docs**
+- Expected cloud link after Render deploy: **https://vanet-alert-api.onrender.com/docs**
