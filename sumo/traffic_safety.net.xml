@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50">
+    <location netOffset="0.00,0.00" convBoundary="0.00,-500.00,1000.00,500.00" origBoundary="0.00,-500.00,1000.00,500.00" projParameter="!"/>
+
+    <edge id="e0" from="n0" to="n1" priority="1" numLanes="2" speed="16.67">
+        <lane id="e0_0" index="0" speed="16.67" length="500.00" shape="0.00,-1.60 500.00,-1.60"/>
+        <lane id="e0_1" index="1" speed="16.67" length="500.00" shape="0.00,1.60 500.00,1.60"/>
+    </edge>
+    <edge id="e1" from="n1" to="n2" priority="1" numLanes="2" speed="22.22">
+        <lane id="e1_0" index="0" speed="22.22" length="500.00" shape="500.00,-1.60 1000.00,-1.60"/>
+        <lane id="e1_1" index="1" speed="22.22" length="500.00" shape="500.00,1.60 1000.00,1.60"/>
+    </edge>
+    <edge id="e2" from="n2" to="n1" priority="1" numLanes="2" speed="22.22">
+        <lane id="e2_0" index="0" speed="22.22" length="500.00" shape="1000.00,1.60 500.00,1.60"/>
+        <lane id="e2_1" index="1" speed="22.22" length="500.00" shape="1000.00,-1.60 500.00,-1.60"/>
+    </edge>
+    <edge id="e3" from="n1" to="n0" priority="1" numLanes="2" speed="16.67">
+        <lane id="e3_0" index="0" speed="16.67" length="500.00" shape="500.00,1.60 0.00,1.60"/>
+        <lane id="e3_1" index="1" speed="16.67" length="500.00" shape="500.00,-1.60 0.00,-1.60"/>
+    </edge>
+    <edge id="e4" from="n3" to="n1" priority="1" numLanes="1" speed="13.89">
+        <lane id="e4_0" index="0" speed="13.89" length="500.00" shape="500.00,500.00 500.00,0.00"/>
+    </edge>
+    <edge id="e5" from="n1" to="n3" priority="1" numLanes="1" speed="13.89">
+        <lane id="e5_0" index="0" speed="13.89" length="500.00" shape="500.00,0.00 500.00,500.00"/>
+    </edge>
+    <edge id="e6" from="n4" to="n1" priority="1" numLanes="1" speed="13.89">
+        <lane id="e6_0" index="0" speed="13.89" length="500.00" shape="500.00,-500.00 500.00,0.00"/>
+    </edge>
+    <edge id="e7" from="n1" to="n4" priority="1" numLanes="1" speed="13.89">
+        <lane id="e7_0" index="0" speed="13.89" length="500.00" shape="500.00,0.00 500.00,-500.00"/>
+    </edge>
+
+    <junction id="n0" type="traffic_light" x="0.00" y="0.00" incLanes="e3_0 e3_1" intLanes="" shape="0.00,0.00"/>
+    <junction id="n1" type="priority" x="500.00" y="0.00" incLanes="e0_0 e0_1 e2_0 e2_1 e4_0 e6_0" intLanes="" shape="500.00,0.00"/>
+    <junction id="n2" type="priority" x="1000.00" y="0.00" incLanes="e1_0 e1_1" intLanes="" shape="1000.00,0.00"/>
+    <junction id="n3" type="priority" x="500.00" y="500.00" incLanes="e5_0" intLanes="" shape="500.00,500.00"/>
+    <junction id="n4" type="priority" x="500.00" y="-500.00" incLanes="e7_0" intLanes="" shape="500.00,-500.00"/>
+</net>

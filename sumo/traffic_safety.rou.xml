@@ -1,0 +1,15 @@
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="25" color="0,0,1"/>
+    <vType id="bus" accel="1.3" decel="3.5" sigma="0.4" length="12" minGap="3.0" maxSpeed="18" color="1,0,0"/>
+
+    <route id="r_main_east" edges="e0 e1"/>
+    <route id="r_main_west" edges="e2 e3"/>
+    <route id="r_north_south" edges="e4 e7"/>
+    <route id="r_south_north" edges="e6 e5"/>
+
+    <flow id="f_eastbound" type="car" route="r_main_east" begin="0" end="400" period="2.5"/>
+    <flow id="f_westbound" type="car" route="r_main_west" begin="0" end="400" period="3"/>
+    <flow id="f_ns" type="car" route="r_north_south" begin="0" end="400" period="4"/>
+    <flow id="f_sn" type="car" route="r_south_north" begin="0" end="400" period="4"/>
+    <flow id="f_bus" type="bus" route="r_main_east" begin="0" end="400" period="20"/>
+</routes>
