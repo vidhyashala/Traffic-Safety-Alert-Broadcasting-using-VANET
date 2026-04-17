@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: vanet-alert-api
+    env: python
+    buildCommand: "pip install -r python/requirements.txt"
+    startCommand: "uvicorn python.deploy_api:app --host 0.0.0.0 --port $PORT"
+    plan: free

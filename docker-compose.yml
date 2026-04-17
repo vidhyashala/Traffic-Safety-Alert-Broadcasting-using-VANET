@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  vanet-api:
+    build: .
+    container_name: vanet-alert-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+    command: uvicorn python.deploy_api:app --host 0.0.0.0 --port 8000

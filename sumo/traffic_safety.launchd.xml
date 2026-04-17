@@ -1,0 +1,6 @@
+<launch>
+    <copy file="traffic_safety.sumocfg"/>
+    <copy file="traffic_safety.net.xml"/>
+    <copy file="traffic_safety.rou.xml"/>
+    <seed value="42"/>
+</launch>

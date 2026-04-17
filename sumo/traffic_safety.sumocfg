@@ -1,0 +1,18 @@
+<configuration>
+    <input>
+        <net-file value="traffic_safety.net.xml"/>
+        <route-files value="traffic_safety.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="500"/>
+        <step-length value="0.1"/>
+    </time>
+    <processing>
+        <collision.action value="warn"/>
+    </processing>
+    <report>
+        <verbose value="true"/>
+        <no-step-log value="true"/>
+    </report>
+</configuration>
